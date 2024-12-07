@@ -9,6 +9,7 @@
 
 
         body {
+            font-size: 14px; 
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -17,6 +18,36 @@
             background-color: #f5f5f5;
         }
 
+            .container {
+        width: 100%; /* Full width on mobile */
+        padding: 1rem;
+    }
+          .navbar ul {
+        flex-direction: column; /* Vertically stacked menu items */
+        width: 100%;
+        padding: 0;
+    }
+        .navbar ul li {
+        margin: 0.5rem 0; /* Add space between items */
+    }
+         .navbar ul li a {
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .row {
+        flex-direction: column; /* Stack all grid items vertically */
+    }
+    .col {
+        flex: 1 1 100%; /* Full width for columns */
+    }
+
+            h1 {
+        font-size: 1.8rem;
+    }
+    h2, h3, h4, h5, h6 {
+        font-size: 1.5rem;
+    }
         header {
             background-color: #2ecc71;
             color: #fff;
@@ -157,13 +188,15 @@
         }
 
         .button {
+            width: 100%;
+            font-size: 1rem;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
             background-color: rgba(0, 0, 0, 0.5);
             color: white;
             border: none;
-            padding: 10px;
+            padding: 0.8rem;
             cursor: pointer;
             border-radius: 5px;
         }
