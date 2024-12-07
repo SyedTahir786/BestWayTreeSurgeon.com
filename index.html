@@ -6,6 +6,139 @@
     <title>Best Way Tree Surgeon</title>
     <link rel="stylesheet" href="style.css">
     <style>
+
+
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Styles */
+:root {
+    font-size: 16px; /* Default font size for scaling */
+    --primary-color: #4CAF50;
+    --secondary-color: #333;
+    --font-family: 'Arial, sans-serif';
+}
+
+/* General Body Styling */
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--secondary-color);
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Responsive Grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+.col {
+    flex: 1 1 100%; /* Default for mobile */
+    padding: 0.5rem;
+}
+.col-6 {
+    flex: 1 1 50%; /* For two columns */
+}
+.col-4 {
+    flex: 1 1 25%; /* For four columns */
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 1rem;
+    color: #fff;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+.navbar ul li {
+    margin: 0 1rem;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #45a049;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    :root {
+        font-size: 18px; /* Larger base font size for tablets and up */
+    }
+    .col {
+        flex: 1 1 50%; /* Two columns for tablets */
+    }
+}
+@media (min-width: 1024px) {
+    .col {
+        flex: 1 1 25%; /* Four columns for desktops */
+    }
+    .navbar ul {
+        justify-content: flex-end; /* Align menu items to the right */
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
